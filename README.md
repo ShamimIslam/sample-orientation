@@ -2,10 +2,10 @@ Orientation Sample
 =====
 This demo shows how an app might sense the orientation of a native device using the JavaScript bridge library.
 
-Intel(R) XDK 
--------------------------------------------
-This sample is part of the Intel(R) XDK. 
-Please sign up the beta at http://software.intel.com/en-us/html5.
+Intel(R) XDK
+--------------------------
+This sample is part of the Intel(R) XDK. Download the Intel(R) XDK at http://software.intel.com/en-us/html5. 
+To see the technical details of the sample, please visit the sample article page at http://software.intel.com/en-us/articles/intel-xdk-orientation-sample.
 
 
 Important App Files
