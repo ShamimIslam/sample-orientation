@@ -5,7 +5,7 @@
 "description":"The orientation demonstration app is a very simple implementation of how the intel.xdk JavaScript Bridge Library can be used to sense a device's orientation in a hybrid app and react accordingly.",
 "articleUrl":"http://software.intel.com/en-us/articles/intel-xdk-orientation-sample",
 "keywords":["intel.xdk API"],
-"visible" : "false",
+"visible" : "true",
 "highlights" : ["intel.xdk API"],
 "apppreview":"false",
 "appname":"demo.orientationsample",
