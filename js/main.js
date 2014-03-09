@@ -1,4 +1,5 @@
-
+/*jslint browser:true, devel:true, white:true, vars:true, eqeq:true */
+/*global $:false, intel:false*/
 /*
  * This function runs once the page is loaded, but the JavaScript bridge library is not yet active.
  */
@@ -10,7 +11,7 @@ var init = function () {
 window.addEventListener("load", init, false);  
 
  //  Prevent Default Scrolling  
-preventDefaultScroll = function(event) 
+var preventDefaultScroll = function(event) 
 {
     // Prevent scrolling on this element
     event.preventDefault();
@@ -42,7 +43,7 @@ document.addEventListener("intel.xdk.device.orientation.change",orientationchang
 function orientationchange(value)
 {
     //Portrait orientation
-    if(value.orientation == 0 || value.orientation == 180)
+    if(value.orientation === 0 || value.orientation == 180)
     {
         document.getElementById("imagesid").className="portrait";
         document.getElementById("imagesid").src="./images/Icon-Phone-V.png";
