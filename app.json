@@ -9,5 +9,6 @@
 "highlights" : ["intel.xdk API"],
 "apppreview":"false",
 "appname":"demo.orientationsample",
-"relname":"4.0.0"
+"relname":"4.0.0",
+"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
