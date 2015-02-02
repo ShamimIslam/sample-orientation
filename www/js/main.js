@@ -34,10 +34,10 @@ function onDeviceReady()
     intel.xdk.device.managePower(true,false);
 
     //hide splash screen
-    intel.xdk.device.hideSplashScreen();        
+    navigator.splashscreen.hide();
 }
     
-document.addEventListener("intel.xdk.device.ready",onDeviceReady,false); 
+document.addEventListener("deviceready",onDeviceReady,false); 
 document.addEventListener("intel.xdk.device.orientation.change",orientationchange,false);      
 
 function orientationchange(value)
