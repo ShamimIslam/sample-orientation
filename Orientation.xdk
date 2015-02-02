@@ -1,13 +1,13 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "Demo",
       "createDefaultBuildConfigs": true,
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+			"projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-orientation/sample.zip",
       "sourceDirectory": "www",
-      "projectGuid": "4fba96a5-71d0-4335-b5c7-d1901bc59295",
+			"projectGuid": "00000000-0000-0000-0000-000000000000",
       "lastModifiedDate": 1407974964660,
       "creationDate": 1407974142115
     },
@@ -72,8 +72,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly.",
@@ -95,8 +95,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Crosswalk with Cordova 3.x",
         "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly.",
@@ -117,8 +117,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly."
@@ -136,11 +136,11 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "runtime_": "Cordova 3.x",
-        "appAuthor_": "",
+				"appAuthor_": "Intel XDK",
         "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly."
       },
       "WindowsPhone8": {
@@ -156,8 +156,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+				"cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "1.0.0.0",
         "runtime_": "Cordova 3.x"
       }
