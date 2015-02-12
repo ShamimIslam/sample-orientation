@@ -1,86 +1,48 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html><!--HTML5 doctype-->
 <html>
-<head>
-    <title>Using PhoneGap Audio Media</title>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-type">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-    
-    <style type="text/css">
-        /* Prevent copy paste for all elements except text fields */
-        *  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
-        input, textarea  { -webkit-user-select:text; }
-    </style>
-    
-    <script type="text/javascript">
-        /* This code prevents users from dragging/scrolling the page */
-        var preventDefaultScroll = function(event) {
-            event.preventDefault();
-            window.scroll(0,0);
-            return false;
-        };
-        document.addEventListener('touchmove', preventDefaultScroll, false);
-    </script>
+    <head>
+        <script>
+            (function () {
+            if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) 
+			{
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode(" @media screen and (orientation: landscape) {@-ms-viewport{width:auto!important}}")
+                );
+                msViewportStyle.appendChild(
+                    document.createTextNode(" @media screen and (orientation: portrait) {@-ms-viewport{width:auto!important;height:" + width + "px! important}}")
+                );
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
 
-    <script src="appframework/appframework.ui.min.js" type="text/javascript"></script>
-    <link href="appframework/af.ui.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-
-    <script src="intelxdk.js"></script>
+            }
+			})();
+        </script>
+        <title>Demo - Orientation</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link href="css/fonts.css" rel="stylesheet" type="text/css" charset="utf-8" />
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="intelxdk.js"></script>
   <script src='cordova.js'></script> 
   <script src='xhr.js'></script>
-    <script src="js/deviceCheck.js" type="text/javascript"></script>
-    <script src="js/mediaHandlers.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        function onDeviceReady() {
-           if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
-                navigator.splashscreen.hide();                 // hide splash screen
-            }       
-            document.getElementById("PhonegapVerID").innerHTML += device.cordova;
-            console.log("onDeviceReady: " + document.getElementById("PhonegapVerID").innerHTML);
-
-            console.log("*** phoneCheck.android: " + phoneCheck.android);
-            console.log("*** phoneCheck.ios: " + phoneCheck.ios);
-
-            // set initial button state
-            setButtonState(myMediaState.start);
-
-            // check if an existing media file already exist and reset button state
-            checkMediaRecFileExist();
-        }
-        document.addEventListener("deviceready", onDeviceReady, false);
-    </script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </head>
     
-</head>
-
-<body>
-    <div id="afui">  
-        <div id="content">
-            <div id="main" title="Recording w/ PhoneGap*" class="panel" data-footer="none" selected="true" style="overflow:hidden">
-                <div id="PhonegapVerID" class="subtitle">
-                    <p>Record with PhoneGap version:</p>
-                </div>
-                <img id="startRecID" src="images/simplemicrophone_rec.png" onclick="startRecording()"></img>   
-                <div style="text-align:center">
-                    <a id="stopRecID" style="display:none" onclick="stopRecording()" class="button red">Stop</a>
-                </div>
-                <p id="RecStatusID" style="text-align:center">Status: </p>
-                <p id="media_rec_pos" style="text-align:center">Recording Position 00:00:00</p>
-                <div style="text-align:center">
-                    <div class="subtitle">Playback Audio</div>
-                    <div class="button-grouped flex">
-                        <a id="startPlayID" onclick="playMusic()" class="button blue">Play</a><a id="pausePlayID" onclick="pauseMusic()" class="button blue">Pause</a><a id="stopPlayID" onclick="stopMusic()" class="button red">Stop</a>
-                    </div>    
-                    <p id="PlayStatusID">Status: </p>
-                    <p id="media_pos">Playback Position 00:00:00</p>
-                </div>
+    <body>
+        <div class="content" id="contentid">
+            <div id="headlineid" class="headline">Try Orientation!</div>
+            <div id="middlesectionid" class="middlesection">
+                <img id="imagesid" class="portrait" src="images/Icon-Phone-V.png"></img>
+            </div>
+            <div id="bottomid" class="bottom">Utilize the devices’ orientation to alter your layout and make your content fit better within the new dimensions. By taking the orientation of your device into account you can be in greater control of how your app will look.</div>
+            <div id="endingid" class="ending">
+                <ul class="lists" > 
+                    <li id="list1">Use image swaps to ensure that your images will fit the way that they should, at whatever angle.</li>
+                    <li id="list2">Second bullet point, so we can see what orientation can do when applied to a list!</li>
+                </ul>
             </div>
         </div>
-    </div>
-	<script type="text/javascript">
-		setTimeout(function(){
-			alert("Note: This sample should be built with 'Cordova for Android' Build target.")
-		},3000);
-	</script>
-</body>
+    </body>
 </html>
