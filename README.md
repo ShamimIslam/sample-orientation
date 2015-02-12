@@ -1,38 +1,29 @@
-Orientation Sample
-=====
-This demo shows how an app might sense the orientation of a native device using the JavaScript bridge library.
+PhoneGap Audio
+-------------------------------------------
+This sample application demonstrates the use of the PhoneGap media object APIs 
+for audio recording and playback. 
 
 Intel(R) XDK
---------------------------
-This sample is part of the Intel(R) XDK. Download the Intel(R) XDK at http://software.intel.com/en-us/html5. 
-To see the technical details of the sample, please visit the sample article page at http://software.intel.com/en-us/articles/intel-xdk-orientation-sample.
+-------------------------------------------
+This sample is part of the Intel(R) XDK. 
+Download the Intel XDK at http://software.intel.com/en-us/html5.
+To see the technical detail of the sample, please visit the sample article page 
+at http://software.intel.com/en-us/articles/media-sample-using-phonegap. 
 
-
-Important App Files
----------------------------
+Application Files
+-----------------
 * app.json
 * icon.png
 * index.html
+* README.md
+* LICENSE
 * screenshot.png
-* js/main.js
-* images/Arrow-Phone.png
-* images/Icon-Phone-H.png
-* images/Icon-Phone-V.png
-* images/logo.png
-* images/logo-lg.png
-* images/swoops.png
-* images/swoops-lg.png
-* css/fonts.css
 * css/main.css
-* css/webfonts/Amble-Regular-webfont.eot
-* css/webfonts/Amble-Regular-webfont.svg
-* css/webfonts/Amble-Regular-webfont.ttf
-* css/webfonts/Amble-Regular-webfont.woff
-* css/webfonts/Apache License.txt
+* js/deviceCheck.js
+* js/mediaHandlers
 
-License Information Follows
----------------------------
-Copyright (c) 2013, Intel Corporation. All rights reserved.
+
+Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:
@@ -59,11 +50,21 @@ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT 
 OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
-IMAGES
+App Framework (formerly jQ.Mobi)
 -----------------------------------------------------------------------------
+* source:  https://github.com/01org/appframework
+* license: https://github.com/01org/appframework/blob/master/license.txt
+ 
+Images
+-----------------------------------------------------------------------------
+*simplemicrophone.png
+*simplemicrophone_rec.png
+all images are created by Intel Corp.
 
-all images are created by Intel Corp. 
-they are licensed under the Creative Commons Attribution 3.0 license 
-http://creativecommons.org/licenses/by/3.0/us/
+Cordova (PhoneGap) Library
+--------------------------
+* cordova.js (cordova-2.0.0.js)
+
+* source:  http://www.phonegap.com/
+* license:  http://www.apache.org/licenses/LICENSE-2.0.html
 
