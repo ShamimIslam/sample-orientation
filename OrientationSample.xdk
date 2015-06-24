@@ -33,6 +33,20 @@
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": []
+      },
+      {
+        "id": "cordova.plugin.device.orientation",
+        "version": "",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "custom": "true",
+        "name": "Cordova Orientation Plugin",
+        "origin": "https://github.com/apache/cordova-plugin-device-orientation.git",
+        "originType": "repo",
+        "sourceLocation": ""
       }
     ],
     "serviceMethods": [],
