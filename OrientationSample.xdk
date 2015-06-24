@@ -15,7 +15,26 @@
     "projectFiles": {},
     "projectDirectories": {},
     "libraries": [],
-    "cordovaPlugins": [],
+     "cordovaPlugins": [
+      {
+        "id": "org.apache.cordova.device",
+        "version": "0.2.13",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.splashscreen",
+        "version": "0.3.5",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      }
+    ],
     "serviceMethods": [],
     "buildConfigurations": {
       "Android": {
