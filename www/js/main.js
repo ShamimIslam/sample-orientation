@@ -40,7 +40,7 @@ function orientationChange(e)
         document.getElementById("headlineid").className="headline";
         document.getElementById("bottomid").className="bottom";
         document.getElementById("endingid").className="ending"; 
-    } else (window.orientation === 90 || window.orientation === -90) {
+    } else if (window.orientation === 90 || window.orientation === -90) {
 //                    currentOrientation = "landscape";
         document.getElementById("imagesid").src="./images/Icon-Phone-H.png";
         document.getElementById("imagesid").className="imglandscape";
@@ -57,9 +57,6 @@ document.addEventListener("deviceready",onDeviceReady,false);
 function onDeviceReady()
 {
     
-    //manage power
-    intel.xdk.device.managePower(true,false);
-
     //hide splash screen
     navigator.splashscreen.hide();
 }
