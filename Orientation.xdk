@@ -24,6 +24,23 @@
         "libraries": [],
         "cordovaPlugins": [
             {
+                "id": "org.apache.cordova.statusbar",
+                "name": "StatusBar",
+                "version": "?",
+                "originType": "cordova.io",
+                "origin": "org.apache.cordova.statusbar",
+                "gitref": "",
+                "paramvals": {},
+                "selectedState": "Included",
+                "dependsOn": [],
+                "topLevel": true,
+                "cordovaVersion": "?",
+                "permissions": {},
+                "description": "Cordova StatusBar Plugin",
+                "data": {},
+                "dependedBy": []
+             },
+            {
                 "id": "cordova-plugin-device",
                 "version": "?",
                 "selectedState": "Included",
@@ -67,12 +84,7 @@
                 "selectedState": "Included",
                 "dependsOn": [],
                 "topLevel": true,
-                "permissions": {
-                    "android:name": [
-                        "android.permission.ACCESS_COARSE_LOCATION",
-                        "android.permission.ACCESS_FINE_LOCATION"
-                    ]
-                },
+                "permissions": {},
                 "description": "Cordova Device Orientation Plugin",
                 "data": {},
                 "dependedBy": []
@@ -80,38 +92,6 @@
         ],
         "serviceMethods": [],
         "buildConfigurations": {
-            "Android": {
-                "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
-                "preferences_": {
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto"
-                },
-                "isActive_": true,
-                "appName_": "Orientation",
-                "appID_": "xdk.sample.orientation",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "iosProvs_": [],
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1",
-                "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly.",
-                "appVersionCode_": "1"
-            },
             "Android-Crosswalk": {
                 "platform_": "android",
                 "runtime_": "Crosswalk with Cordova 3.x",
@@ -141,6 +121,38 @@
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
                 "appAuthor_": "Intel XDK",
+                "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly.",
+                "appVersionCode_": "1"
+            },
+            "Android": {
+                "platform_": "android",
+                "runtime_": "Cordova 3.x",
+                "name_": "Android",
+                "preferences_": {
+                    "android-minSdkVersion": "14",
+                    "android-targetSdkVersion": "19",
+                    "android-installLocation": "auto"
+                },
+                "isActive_": true,
+                "appName_": "Orientation",
+                "appID_": "xdk.sample.orientation",
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "iosProvs_": [],
+                "cordovaCLIVersion_": "?",
+                "crosswalkVersion_": "?",
+                "appAuthor_": "Intel XDK",
+                "appVersion_": "0.0.1",
                 "appDescription_": "The orientation demonstration app is a very simple implementation of how to sense a device's orientation in a hybrid app and react accordingly.",
                 "appVersionCode_": "1"
             },
