@@ -105,7 +105,7 @@
                 "appName_": "Orientation",
                 "appID_": "xdk.sample.orientation",
                 "appAccess_": {
-                    "mode": "legacy",
+                    "mode": "whitelist",
                     "network": [
                         "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
