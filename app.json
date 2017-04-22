@@ -1,19 +1,15 @@
 {
-   "mobile" : false,
-   "keywords" : [
-      "intel.xdk API"
-   ],
-   "title" : "Orientation Sample",
-   "appName" : "demo.orientationsample",
-   "tooltip" : "This demo shows how an app might sense the orientation of a native device using the JavaScript bridge library",
-   "visible" : true,
-   "repoName" : "sample-orientation",
-   "appPreview" : false,
-   "description" : "The orientation demonstration app is a very simple implementation of how the intel.xdk JavaScript Bridge Library can be used to sense a device's orientation in a hybrid app and react accordingly.",
-   "projectTypeName" : "com.intel.xdk.projecttype.jsapp",
-   "highlights" : [
-      "intel.xdk API"
-   ],
-   "relName" : "4.0.0",
-   "articleUrl" : "https://software.intel.com/en-us/xdk/article/intel-xdk-orientation-sample"
+  "title" : "Orientation Sample",
+  "projectTypeName" : "com.intel.xdk.projecttype.jsapp",
+  "sample" : true,
+  "template" : false,
+  "visible" : true,
+  "sortWeight" : "0.0",
+  "repoName" : "sample-orientation",
+  "tooltip" : "Sense the orientation of a device",
+  "description" : "The orientation sample app is a very simple demonstration of how to sense a device's orientation in a hybrid mobile Cordova app.",
+  "articleUrl" : "https://software.intel.com/en-us/xdk/article/intel-xdk-orientation-sample",
+  "keywords" : ["Cordova","Orientation"],
+  "targets" : [""],
+  "runtimes" : [""]
 }
